@@ -1,0 +1,40 @@
+body {
+    font-family: Arial;
+    background-color: white;
+}
+
+
+.box {
+    display: inline-block;      
+    width: 250px;
+    border: 2px solid gray;     
+    background-color: white;    
+    padding: 15px;              
+    margin: 10px;               
+    text-align: center;         
+}
+
+
+.box img {
+    width: 100%;
+}
+
+
+.price {
+    color: green;
+    font-weight: bold;
+}
+
+
+a {
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    padding: 5px 10px;
+}
+
+
+.box:hover {
+    outline: 3px solid blue;
+    outline-offset: 5px;
+}
