@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <title>Event Registration</title>
+        <link rel="stylesheet" href="style.css"/>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <script>
+            document.write("<h1>Global tech connect-Event Registration</h1>");
+        </script>
+        <form>
+            <table>
+                <tr>
+                    <td>Full Name</td>
+                    <td>
+                        <input 
+                          type="text"
+                          id="name"
+                          placeholder="Enter your full name"
+                          onkeyup="return getName();"
+                        />
+                    </td>
+                    <td><p id="nameErr" style="color: red"></p></td>
+                </tr>
+
+                <tr>
+                    <td>Email</td>
+                    <td>
+                        <input 
+                          type="text"
+                          id="email"
+                          placeholder="Enter your email"
+                          onsubmit="return getEmail();"
+                        />
+                    </td>
+                    <td><p id="emailErr" style="color: red"></p></td>
+            
+                
+                </tr>
+
+
+                <tr>
+                    <td>Company</td>
+                    <td>
+                        <input 
+                          type="text"
+                          id="company"
+                          placeholder="Company or institution"
+                        />
+                    </td>
+                    <td><p id="companyErr" style="color: red"></p></td>
+                </tr>
+                 
+
+                <tr>
+                    <td>Attendance Type</td>
+                    <td>
+                    <input type="radio" name="attendance" value="Virtual" /> Virtual
+                    <input type="radio" name="attendance" value="InPerson" /> InPerson
+                    </td>
+                    <td><p id="attendanceErr" style="color: red"></p></td>
+                
+                </tr>
+
+                <tr>
+                    <td>
+                        <button type="submit" onclick="return collectData();">
+                            Register
+                        </button>
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+        <br/>
+
+        <button onclick="toggleAnalytics()" id="analyticsBtn">
+            Show Event Analytics
+        </button>
+
+        <div id="analyticsPanel" style="display: none">
+          <h3>Event Statistics</h3>
+
+          <p>Total Registrants: <span id="total"></span></p>
+
+          <p>Virtual: <span id="virtualCount"></span></p>
+
+          <p>In-Person: <span id="inpersonCount"></span></p>           
+
+        </div>
+        
+    </body>
+</html>
