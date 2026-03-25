@@ -1,0 +1,36 @@
+body{
+    font-family: Arial;
+    text-align: center;
+    background-color: beige;
+
+}
+
+textarea{
+    width: 80%;
+    height: 150px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: aqua;
+}
+
+#result{
+    margin-top: 20px;
+    padding: 15px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border: 1px solid;
+}
